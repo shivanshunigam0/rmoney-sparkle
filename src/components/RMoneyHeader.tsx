@@ -56,11 +56,15 @@ const RMoneyHeader = () => {
             className="flex items-center space-x-3"
             whileHover={{ scale: 1.05 }}
           >
-            <img 
-              src="/lovable-uploads/b86d49b9-32d4-4cf9-8318-80a245ad2185.png" 
-              alt="Raghunandan Money Logo"
-              className="h-12 w-auto object-contain"
-            />
+            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+              <span className="text-primary-foreground font-bold text-xl">R</span>
+            </div>
+            <div className="flex flex-col">
+              <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                Raghunandan Money
+              </span>
+              <span className="text-xs text-muted-foreground">investment khuzhiyon ka</span>
+            </div>
           </motion.div>
 
           {/* Desktop Navigation */}
