@@ -1,12 +1,27 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import RMoneyHeader from '@/components/RMoneyHeader';
+import LiveTicker from '@/components/LiveTicker';
+import HeroSection from '@/components/HeroSection';
+import FeaturesSection from '@/components/FeaturesSection';
+import CalculatorSection from '@/components/CalculatorSection';
+import TestimonialsSection from '@/components/TestimonialsSection';
+import PricingSection from '@/components/PricingSection';
+import FooterSection from '@/components/FooterSection';
+import WhatsAppChatbot from '@/components/WhatsAppChatbot';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <RMoneyHeader />
+      <LiveTicker />
+      <main>
+        <HeroSection />
+        <FeaturesSection />
+        <CalculatorSection />
+        <TestimonialsSection />
+        <PricingSection />
+      </main>
+      <FooterSection />
+      <WhatsAppChatbot />
     </div>
   );
 };
